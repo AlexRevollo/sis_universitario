@@ -30,7 +30,7 @@ class GestionController extends Controller
     public function store(Request $request)
     {
         $request->validate([
-            'nombre' => 'required|string|max:255',
+            'nombre' => 'required|string|max:255', 
         ]);
 
         Gestion::create($request->all());
